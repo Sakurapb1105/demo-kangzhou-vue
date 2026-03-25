@@ -30,7 +30,7 @@
               <p class="project-desc">{{ project.description || '暂无描述信息...' }}</p>
             </div>
             <div class="card-footer">
-              <el-button type="primary" link>进入项目 ➔</el-button>
+              <el-button type="primary" link @click="router.push(`/project/${project.id}`)">进入项目 ➔</el-button>
             </div>
           </el-card>
         </div>
